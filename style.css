@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "norse-bold";
+    src: 
+        url("fonts/Norse-Bold.woff2") format("woff2"),
+        url("fonts/Norse-Bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    height: 100%;
+    width: 70%;
+    background-color: #FFFFFF;
+    margin: auto;
+    display: flex;
+    font-size: inherit;
+
+}
+
+.image-container {
+    width: 40%;
+    position: relative;
+    font-size: inherit;
+    
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    background-color: #09520f;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.odin-container {
+    background-color: #000000;
+    opacity: 60%;
+    position: relative;
+    top: 30%;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.odin-container img {
+    width: auto;
+    height: 100%;
+    background-color: #000000;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.odin-container div {
+    font-family: "norse-bold";
+    font-size: 5rem;
+    position: relative;
+    right: 10%;
+    top: 25%;
+    color: #FFFFFF;
+}
+
+.image-container label {
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 1%;
+    left: 30%;
+    font-size: 1rem;
+}
+
+.image-container a {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-container {
+    background-color: #eeeeee;
+    width: 60%;
+    font-size: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.legend {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 10% 0 10%;
+}
+
+.legend p,
+.form-legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.form-legend {
+    margin-bottom: 20px;
+}
+
+.form form {
+    width: 100%;
+}
+
+.basic-input-fields {
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow: 1px 10px 10px #d3d3d3;
+    padding: 20px 10% 20px 10%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    height: 4rem;
+}
+
+.form-row div {
+    flex: 1 0 auto;
+}
+
+.form-row label {
+    display: block;
+    font-size: 0.85rem;
+    text-shadow: 0px 1px gray;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row input[type="password"] {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    height: 30px;
+    width: 250px;
+    background-color: #f0f3ff;
+}
+
+.form-row input[type="text"]:focus,
+.form-row input[type="email"]:focus,
+.form-row input[type="tel"]:focus,
+.form-row input[type="password"]:focus {
+    outline-color: #bbdff1;
+    box-shadow: 1px 1px 2px #bbdff1;
+}
+
+.form-row input[type="password"]:invalid {
+    border: 2px solid #f00f0f;
+}
+
+.action {
+    margin: 20px 10% 20px 10%;
+}
+
+.action button {
+    background-color: #596D48;
+    color: #FFFFFF;
+    height: 50px;
+    width: 200px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+}
+
+.action p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+
+}
+
+.action a {
+    font-size: inherit;
+    color: #596D48;
+    text-decoration: none;
+}
